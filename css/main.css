@@ -214,6 +214,14 @@ body {
 
 }
 
+.content .content-menu .active {
+    background-color: #5e9400;
+}
+
+.content .content-menu .active a:hover{
+    background-color: #5e9400;
+}
+
 .content .content-theory {
     margin-left: 60px;
     margin-right: 60px;
@@ -260,6 +268,10 @@ body {
     height: 570px;
     border-radius: 10px;
     box-shadow: 0 0 15px 2px #dbdbdb;
+}
+
+.content .task-code #editor {
+    height: 570px;
 }
 
 .content .task-result {
