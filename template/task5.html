@@ -28,41 +28,37 @@
                 <li><a href="theory2.html"><i class="fa fa-align-justify"></i></a></li>
                 <li><a href="task1.html"><i class="fa fa-random"></i></a></li>
                 <li><a href="theory3.html"><i class="fa fa-align-justify"></i></a></li>
-                <li class="active"><a href="task2.html"><i class="fa fa-random"></i></a></li>
+                <li><a href="task2.html"><i class="fa fa-random"></i></a></li>
                 <li><a href="theory4.html"><i class="fa fa-align-justify"></i></a></li>
                 <li><a href="task3.html"><i class="fa fa-code"></i></a></li>
                 <li><a href="theory5.html"><i class="fa fa-align-justify"></i></a></li>
                 <li><a href="task4.html"><i class="fa fa-random"></i></a></li>
                 <li><a href="theory6.html"><i class="fa fa-align-justify"></i></a></li>
-                <li><a href="task5.html"><i class="fa fa-random"></i></a></li>
+                <li class="active"><a href="task5.html"><i class="fa fa-random"></i></a></li>
             </ul>
         </div>
-        <div class="task">
-            <div class="column-title">Минимальное остовное дерево графа</div>
-            <div class="column-text">
-                На рисунке представлен граф G(U,V), где U - множество ребёр, а V - множество вершин.
-                Необходимо, манипулируя матрицей, построить для данного графа минимальное остовное дерево.<br><br>
-                Не забывайте, что во взвешенных графах число между вершинам означает вес ребра.
-            </div>
+        <div class="content-tasks">
+            <div class="column-title">Алгоритм Дейсктры</div>
+            <div class="column-text">Дан взвешенный граф G(U,V). Необходимо найти кратчайший путь из некоторой вершины s в вершину v.
+                На вход подаётся количество вершин и ребёр, пары вершин, соединённые ребром и его вес и вершины,
+                кратчайший путь между которыми нужно выяснить.
+                В ответ вывести стоимость кратчайшего пути (сумму всех рёбер этого пути).</div>
         </div>
-        <div class="example">
-            <div class="column-title">Манипуляции над матрицей</div>
-            <div class="column-text">Матрица</div>
+        <div class="task-code">
+            <div id="editor" ></div>
         </div>
-        <div class="result">
-            <div class="column-title">Иходный граф и остовное дерево</div>
-            <div class="column-text">
-                <img src="../image/Min_graph.png" class="image-graph-1">
-            </div>
+        <div class="task-result">
+            <div class="column-title">Результат работы программы</div>
         </div>
-        <div class="buttons">
-            <button class="btn btn-check"><i class="my-font fa fa-check"></i> Проверить</button>
-        </div>
+        <button class="task-btn btn-start"><i class="my-font fa fa-repeat"></i> Запустить</button>
+        <button class="task-btn btn-remove"><i class="my-font fa fa-times"></i> Очистить</button>
+        <button class="task-btn btn-task2-check"><i class="my-font fa fa-check"></i> Проверить</button>
     </div>
 
     <footer class="main-footer">
-
     </footer>
 </div>
+<script src="../js/src-min/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/task.js" type="text/javascript" charset="utf-8"></script>
 </body>
-</html>                                                                                                         
+</html>

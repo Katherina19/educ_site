@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Теория графов</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="container clearfix">
+    <header class="main-header">
+        <div class="logo"></div>
+        <nav class="top-menu">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Профиль</a></li>
+                <li>Теория графов</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="content-menu">
+            <ul>
+                <li class="active"><a href="theory1.html"><i class="fa fa-align-justify"></i></a></li>
+                <li><a href="theory2.html"><i class="fa fa-align-justify"></i></a></li>
+                <li><a href="task1.html"><i class="fa fa-random"></i></a></li>
+                <li><a href="theory3.html"><i class="fa fa-align-justify"></i></a></li>
+                <li><a href="task2.html"><i class="fa fa-random"></i></a></li>
+                <li><a href="theory4.html"><i class="fa fa-align-justify"></i></a></li>
+                <li><a href="task3.html"><i class="fa fa-code"></i></a></li>
+                <li><a href="theory5.html"><i class="fa fa-align-justify"></i></a></li>
+                <li><a href="task4.html"><i class="fa fa-random"></i></a></li>
+                <li><a href="theory6.html"><i class="fa fa-align-justify"></i></a></li>
+                <li><a href="task5.html"><i class="fa fa-random"></i></a></li>
+            </ul>
+        </div>
+        <div class="content-theory">
+            <div class="theory-title">Остовное дерево для графа</div>
+            <div class="theory-text">
+                <p>
+                    <b>Остовное дерево</b> — ациклический связный подграф данного связного неориентированного графа, в который входят все его вершины.
+                    Неформально говоря, остовное дерево состоит из некоторого подмножества рёбер графа, таких, что из любой вершины графа можно попасть в любую другую вершину,
+                    двигаясь по этим рёбрам, и в нём нет циклов, то есть из любой вершины нельзя попасть в саму себя, не пройдя какое-то ребро дважды.
+                    Остовное дерево также иногда называют покрывающим деревом, остовом или скелетом графа.
+                </p>
+
+                <p>Понятие остовный лес неоднозначно, под ним могут понимать один из следующих подграфов:<br>
+                    <ul>
+                        <li>любой ациклический подграф, в который входят все вершины графа, но не обязательно связный;</li>
+                        <li>в несвязном графе — подграф, состоящий из объединения остовных деревьев для каждой его компоненты связности.</li>
+                    </ul>
+                </p>
+
+                <p>
+                    <b>Свойства:</b><br>
+                    <ul>
+                        <li>Любое остовное дерево в графе с n вершинами содержит ровно n - 1 ребро.</li>
+                        <li>Число остовных деревьев в полном графе на n вершинах выражается знаменитой формулой Кэли: n<sup>n-2</sup></li>
+                        <li>В общем случае, число остовных деревьев в произвольном графе может быть вычислено при помощи так называемой матричной теоремы о деревьях.</li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Алгоритмы</b><br>
+                    <p>
+                        Остовное дерево может быть построено практически любым алгоритмом обхода графа, например поиском в глубину или поиском в ширину.
+                        Оно состоит из всех пар рёбер (u, v), таких, что алгоритм, просматривая вершину u, обнаруживает в её списке смежности новую, не обнаруженную ранее вершину v.
+                    </p>
+                    <p>
+                        Остовные деревья, построенные при обходе графа алгоритмом Дейкстры, начиная из вершины s, обладают тем свойством,
+                        что кратчайший путь в графе из s до любой другой вершины — это (единственный) путь из s до этой вершины в построенном остовном дереве.
+                    </p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+    </footer>
+</div>
+</body>
+</html>

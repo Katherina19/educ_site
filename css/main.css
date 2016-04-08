@@ -55,7 +55,7 @@ body {
     margin-right: 5px;
     margin-left: 10px;
     border-radius: 5px;
-    background-color: #7a944b;
+    background-color: #5e9400;
 }
 
 .top-menu li:nth-child(3){
@@ -80,7 +80,7 @@ body {
 }
 
 .content {
-    height: 750px;
+    height: 800px;
     width: 1200px;
 }
 
@@ -119,58 +119,68 @@ body {
 }
 
 .content .content-menu li a:hover {
-    background-color: #7a944b;
+    background-color: #5e9400;
 }
 
-.content .column-left {
+.content .task {
     float: left;
-    max-width: 600px;
-    min-height: 560px;
-}
-
-.content .column-left .theory {
     margin-left: 60px;
     margin-top: 20px;
-    width: 500px;
+    width: 520px;
     height: 300px;
     border-radius: 10px;
     box-shadow: 0 0 15px 2px #dbdbdb;
 }
 
-.content .column-left .example {
-    margin-left: 60px;
-    margin-top: 20px;
-    width: 500px;
-    height: 300px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px 2px #dbdbdb;
-}
-
-.content .column-right {
-    float: right;
-    max-width: 600px;
-    min-height: 560px;
-}
-
-.content .column-right .task {
+.content .example {
+    float: left;
+    margin-left: 40px;
     margin-right: 60px;
     margin-top: 20px;
-    width: 500px;
-    height: 550px;
+    width: 520px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 2px #dbdbdb;
+}
+
+.content .result {
+    float: left;
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 1000px;
+    height: 300px;
     border-radius: 10px;
     box-shadow: 0 0 15px 2px #dbdbdb;
 }
 
 .content .column-text {
+    text-align: justify;
+    padding: 20px;
+    text-transform: none;
+    font-size: 16px;
+}
+
+.content .image-graph {
+    padding-left: 80px;
+}
+
+.content .image-graph-1 {
+    padding-left: 350px;
+}
+
+.content .column-title {
     padding-top: 10px;
-    padding-left: 10px;
-    color: lightgray;
+    padding-left: 30px;
+    text-transform: none;
+    font-size: 20px;
+    color: #5e9400;
+    font-weight: bold;
 }
 
 .content .buttons .btn-check {
     height: 50px;
     width: 130px;
-    margin-left: 200px;
+    margin-left: 525px;
     margin-top: 20px;
     background-color: #a8ba86;
     border: none;
@@ -202,18 +212,6 @@ body {
     background-color: #7a944b;
 }
 
-.content .buttons .btn-prev {
-
-}
-
-.content .buttons .btn-next {
-
-}
-
-.content .buttons .btn-check {
-
-}
-
 .content .content-menu .active {
     background-color: #5e9400;
 }
@@ -227,19 +225,29 @@ body {
     margin-right: 60px;
     margin-top: 20px;
     width: 1080px;
-    min-height: 500px;
-    max-height: 700px;
+    height: 650px;
     border-radius: 10px;
     box-shadow: 0 0 15px 2px #dbdbdb;
 }
 
 .content .content-theory .theory-title {
-    color: #7a944b;
+    color: #5e9400;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
+    font-size: 20px;
 }
+
+.content .content-theory .theory-text {
+    text-indent: 20px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: none;
+    font-size: 16px;
+}
+
 
 .content .content-tasks {
     margin-left: 60px;
@@ -247,7 +255,7 @@ body {
     margin-top: 20px;
     float: right;
     width: 500px;
-    height: 250px;
+    height: 350px;
     border-radius: 10px;
     box-shadow: 0 0 15px 2px #dbdbdb;
 }
@@ -279,7 +287,7 @@ body {
     margin-top: 20px;
     float: left;
     width: 500px;
-    height: 300px;
+    height: 200px;
     border-radius: 10px;
     box-shadow: 0 0 15px 2px #dbdbdb;
 }
@@ -305,45 +313,9 @@ body {
     margin-left: 215px;
 }
 
-.content .btn-check {
+.content .btn-task2-check {
     width: 130px;
     margin-left: 300px;
-}
-
-.content .content-question {
-    height: 300px;
-    width: 1080px;
-    margin-top: 20px;
-    margin-left: 60px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px 2px #dbdbdb;
-}
-
-.content .content-answer {
-    height: 250px;
-    width: 1080px;
-    margin-top: 20px;
-    margin-left: 60px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px 2px #dbdbdb;
-}
-
-.content .question-btn {
-    width: 130px;
-    height: 50px;
-    background-color: #a8ba86;
-    margin-left: 200px;
-    margin-top: 20px;
-    color: white;
-    font-size: 14px;
-    border: none;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.content .btn-remove {
-    float: right;
-    margin-right: 200px;
 }
 
 .main-footer {
