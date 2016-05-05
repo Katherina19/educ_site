@@ -160,12 +160,26 @@ body {
     font-size: 16px;
 }
 
-.content .image-graph {
-    padding-left: 80px;
+.column-left {
+    float: left;
+    width: 450px;
 }
 
-.content .image-graph-1 {
-    padding-left: 350px;
+.column-right {
+    float: right;
+    width: 450px;
+}
+
+#Graph1 {
+    padding-left: 50px;
+    height: 230px;
+    width: 230px;
+}
+
+#Graph2 {
+    padding-left: 50px;
+    height: 230px;
+    width: 230px;
 }
 
 .content .column-title {
@@ -324,4 +338,26 @@ body {
     border-bottom-right-radius: 10px;
     height: 60px;
     background-color: #a8ba86;
+}
+
+.column-text-array {
+    width: 406px;
+    padding: 21px 57px 0px 57px;
+}
+
+.table-array td {
+    width: 40px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.content .buttons .btn-save {
+    height: 40px;
+    width: 130px;
+    margin-left: 150px;
+    margin-top: 15px;
+    background-color: #a8ba86;
+    border: none;
+    color: white;
+    text-transform: uppercase;
 }
