@@ -345,6 +345,11 @@ body {
     padding: 21px 57px 0px 57px;
 }
 
+.column-text-array-task2 {
+    width: 450px;
+    padding: 10px 25px 0px 25px;
+}
+
 .table-array td {
     width: 40px;
     font-size: 16px;
@@ -361,3 +366,15 @@ body {
     color: white;
     text-transform: uppercase;
 }
+
+.content .buttons .btn-save-task2 {
+    height: 40px;
+    width: 130px;
+    margin-left: 168px;
+    margin-top: 12px;
+    background-color: #a8ba86;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+

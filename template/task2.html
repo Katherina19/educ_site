@@ -7,6 +7,13 @@
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/main.css">
+    <script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="../js/task2.js"></script>
+
+    <!-- Sigma.js -->
+    <script src="../js/build/sigma.min.js"></script>
+    <script src="../js/build/plugins/sigma.parsers.json.min.js"></script>
+    <script src="../js/build/plugins/sigma.renderers.edgeLabels.min.js"></script>
 </head>
 <body>
 <div class="container clearfix">
@@ -41,12 +48,88 @@
         </div>
         <div class="example">
             <div class="column-title">Манипуляции над матрицей</div>
-            <div class="column-text">Матрица</div>
+            <div class="column-text-array-task2">
+                <form name="array" method="post" action="" class="array">
+                    <table class="table-array">
+                        <tr>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><input type="text" size="5" id="id11" value="0"></td>
+                            <td><input type="text" size="5" id="id21" value="1"></td>
+                            <td><input type="text" size="5" id="id31" value="1"></td>
+                            <td><input type="text" size="5" id="id41" value="0"></td>
+                            <td><input type="text" size="5" id="id51" value="0"></td>
+                            <td><input type="text" size="5" id="id61" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><input type="text" size="5" id="id12" value="1"></td>
+                            <td><input type="text" size="5" id="id22" value="0"></td>
+                            <td><input type="text" size="5" id="id32" value="1"></td>
+                            <td><input type="text" size="5" id="id42" value="1"></td>
+                            <td><input type="text" size="5" id="id52" value="0"></td>
+                            <td><input type="text" size="5" id="id62" value="1"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><input type="text" size="5" id="id13" value="1"></td>
+                            <td><input type="text" size="5" id="id23" value="1"></td>
+                            <td><input type="text" size="5" id="id33" value="0"></td>
+                            <td><input type="text" size="5" id="id43" value="1"></td>
+                            <td><input type="text" size="5" id="id53" value="1"></td>
+                            <td><input type="text" size="5" id="id63" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><input type="text" size="5" id="id14" value="0"></td>
+                            <td><input type="text" size="5" id="id24" value="1"></td>
+                            <td><input type="text" size="5" id="id34" value="1"></td>
+                            <td><input type="text" size="5" id="id44" value="0"></td>
+                            <td><input type="text" size="5" id="id54" value="1"></td>
+                            <td><input type="text" size="5" id="id64" value="1"></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><input type="text" size="5" id="id15" value="0"></td>
+                            <td><input type="text" size="5" id="id25" value="0"></td>
+                            <td><input type="text" size="5" id="id35" value="1"></td>
+                            <td><input type="text" size="5" id="id45" value="1"></td>
+                            <td><input type="text" size="5" id="id55" value="0"></td>
+                            <td><input type="text" size="5" id="id65" value="1"></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><input type="text" size="5" id="id16" value="0"></td>
+                            <td><input type="text" size="5" id="id26" value="1"></td>
+                            <td><input type="text" size="5" id="id36" value="0"></td>
+                            <td><input type="text" size="5" id="id46" value="1"></td>
+                            <td><input type="text" size="5" id="id56" value="1"></td>
+                            <td><input type="text" size="5" id="id66" value="0"></td>
+                        </tr>
+                    </table>
+                </form>
+                <div class="buttons">
+                    <button class="btn btn-save-task2" onclick="getGraph()">Сохранить</button>
+                </div>
+            </div>
         </div>
         <div class="result">
             <div class="column-title">Иходный граф и остовное дерево</div>
             <div class="column-text">
-                <img src="../image/Min_graph.png" class="image-graph-1">
+                <div class="column-left">
+                    <div id="Graph1"></div>
+                </div>
+                <div class="column-right">
+                    <div id="Graph2"></div>
+                </div>
             </div>
         </div>
         <div class="buttons">
