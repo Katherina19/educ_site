@@ -36,6 +36,7 @@ $(document).ready(function(){
     var n = $('.column-text-array .table-array tr:first-child td:last-child').text(); //Количество вершин
     n = Number(n);
     getGraphArray(n);
+    console.log(graphArray);
 
     var data = {
         "nodes": [

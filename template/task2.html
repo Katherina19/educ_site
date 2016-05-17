@@ -38,91 +38,60 @@
             </ul>
         </div>
         <div class="task">
-            <div class="column-title">Минимальное остовное дерево графа</div>
+            <div class="column-title">Раскраска вершин графа</div>
             <div class="column-text">
                 На рисунке представлен граф G(U,V), где U - множество ребёр, а V - множество вершин.
                 Необходимо, манипулируя матрицей, построить для данного графа минимальное остовное дерево.
-                Также необходимо написать суммарный вес минимального остовного дерева.<br><br>
+                <br><br>
                 Не забывайте, что во взвешенных графах число между вершинам означает вес ребра.
             </div>
         </div>
         <div class="example">
-            <div class="column-title">Манипуляции над матрицей</div>
-            <div class="column-text-array-task2">
-                <form name="array" method="post" action="" class="array">
-                    <table class="table-array">
-                        <tr>
-                            <td></td>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                            <td>6</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td><input type="text" size="5" id="id11" value="0"></td>
-                            <td><input type="text" size="5" id="id21" value="1"></td>
-                            <td><input type="text" size="5" id="id31" value="1"></td>
-                            <td><input type="text" size="5" id="id41" value="0"></td>
-                            <td><input type="text" size="5" id="id51" value="0"></td>
-                            <td><input type="text" size="5" id="id61" value="0"></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td><input type="text" size="5" id="id12" value="1"></td>
-                            <td><input type="text" size="5" id="id22" value="0"></td>
-                            <td><input type="text" size="5" id="id32" value="1"></td>
-                            <td><input type="text" size="5" id="id42" value="1"></td>
-                            <td><input type="text" size="5" id="id52" value="0"></td>
-                            <td><input type="text" size="5" id="id62" value="1"></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td><input type="text" size="5" id="id13" value="1"></td>
-                            <td><input type="text" size="5" id="id23" value="1"></td>
-                            <td><input type="text" size="5" id="id33" value="0"></td>
-                            <td><input type="text" size="5" id="id43" value="1"></td>
-                            <td><input type="text" size="5" id="id53" value="1"></td>
-                            <td><input type="text" size="5" id="id63" value="0"></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td><input type="text" size="5" id="id14" value="0"></td>
-                            <td><input type="text" size="5" id="id24" value="1"></td>
-                            <td><input type="text" size="5" id="id34" value="1"></td>
-                            <td><input type="text" size="5" id="id44" value="0"></td>
-                            <td><input type="text" size="5" id="id54" value="1"></td>
-                            <td><input type="text" size="5" id="id64" value="1"></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td><input type="text" size="5" id="id15" value="0"></td>
-                            <td><input type="text" size="5" id="id25" value="0"></td>
-                            <td><input type="text" size="5" id="id35" value="1"></td>
-                            <td><input type="text" size="5" id="id45" value="1"></td>
-                            <td><input type="text" size="5" id="id55" value="0"></td>
-                            <td><input type="text" size="5" id="id65" value="1"></td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td><input type="text" size="5" id="id16" value="0"></td>
-                            <td><input type="text" size="5" id="id26" value="1"></td>
-                            <td><input type="text" size="5" id="id36" value="0"></td>
-                            <td><input type="text" size="5" id="id46" value="1"></td>
-                            <td><input type="text" size="5" id="id56" value="1"></td>
-                            <td><input type="text" size="5" id="id66" value="0"></td>
-                        </tr>
-                    </table>
-                </form>
+            <div class="column-title">Раскраска вершин</div>
+            <div class="column-text-task2">
+                Вершина 1 -
+                <select id="select1">
+                    <option value="#D50000">Красная</option>
+                    <option value="#1A237E">Синяя</option>
+                    <option value="#EF6C00">Оранжевая</option>
+                </select>
+                &nbsp;&nbsp;&nbsp;Вершина 2 -
+                <select id="select2">
+                    <option value="#D50000">Красная</option>
+                    <option value="#1A237E">Синяя</option>
+                    <option value="#EF6C00">Оранжевая</option>
+                </select><br/><br/><br/>
+                Вершина 3 -
+                <select id="select3">
+                    <option value="#D50000">Красная</option>
+                    <option value="#1A237E">Синяя</option>
+                    <option value="#EF6C00">Оранжевая</option>
+                </select>
+                &nbsp;&nbsp;&nbsp;Вершина 4 -
+                <select id="select4">
+                    <option value="#D50000">Красная</option>
+                    <option value="#1A237E">Синяя</option>
+                    <option value="#EF6C00">Оранжевая</option>
+                </select><br/><br/><br/>
+                Вершина 5 -
+                <select id="select5">
+                    <option value="#D50000">Красная</option>
+                    <option value="#1A237E">Синяя</option>
+                    <option value="#EF6C00">Оранжевая</option>
+                </select>
+                &nbsp;&nbsp;&nbsp;Вершина 6 -
+                <select id="select6">
+                    <option value="#D50000">Красная</option>
+                    <option value="#1A237E">Синяя</option>
+                    <option value="#EF6C00">Оранжевая</option>
+                </select>
                 <div class="buttons">
                     <button class="btn btn-save-task2" onclick="getGraph()">Сохранить</button>
                 </div>
             </div>
         </div>
         <div class="result">
-            <div class="column-title">Иходный граф и остовное дерево</div>
+            <div class="column-title">Иходный граф и его раскраска</div>
             <div class="column-text">
                 <div class="column-left">
                     <div id="Graph1"></div>
@@ -133,7 +102,7 @@
             </div>
         </div>
         <div class="buttons">
-            <button class="btn btn-check"><i class="my-font fa fa-check"></i> Проверить</button>
+            <button class="btn btn-check" onclick="checkTask()"><i class="my-font fa fa-check"></i> Проверить</button>
         </div>
     </div>
 
