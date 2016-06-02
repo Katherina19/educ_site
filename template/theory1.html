@@ -7,6 +7,14 @@
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/main.css">
+
+    <script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="../js/theory1.js"></script>
+
+    <!-- Sigma.js -->
+    <script src="../js/build/sigma.min.js"></script>
+    <script src="../js/build/plugins/sigma.parsers.json.min.js"></script>
+    <script src="../js/build/plugins/sigma.renderers.edgeLabels.min.js"></script>
 </head>
 <body>
 <div class="container clearfix">
@@ -14,8 +22,8 @@
         <div class="logo"></div>
         <nav class="top-menu">
             <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Профиль</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
                 <li>Теория графов</li>
             </ul>
         </nav>
@@ -26,9 +34,8 @@
             <ul>
                 <li><a href=""><i class="fa fa-angle-left"></i></a></li>
                 <li class="active"><a href="theory1.html"><i class="fa fa-align-justify"></i></a></li>
-                <li><a href="theory2.html"><i class="fa fa-align-justify"></i></a></li>
                 <li><a href="task1.html"><i class="fa fa-random"></i></a></li>
-                <li><a href="theory2.html"><i class="fa fa-angle-right"></i></a></li>
+                <li><a href="task1.html"><i class="fa fa-angle-right"></i></a></li>
             </ul>
         </div>
         <div class="content-theory">
@@ -62,10 +69,14 @@
                         Остовное дерево может быть построено практически любым алгоритмом обхода графа, например поиском в глубину или поиском в ширину.
                         Оно состоит из всех пар рёбер (u, v), таких, что алгоритм, просматривая вершину u, обнаруживает в её списке смежности новую, не обнаруженную ранее вершину v.
                     </p>
-                    <p>
-                        Остовные деревья, построенные при обходе графа алгоритмом Дейкстры, начиная из вершины s, обладают тем свойством,
-                        что кратчайший путь в графе из s до любой другой вершины — это (единственный) путь из s до этой вершины в построенном остовном дереве.
-                    </p>
+
+                <button class="Example" onclick="getExample()">Пример остовных деревьев</button>
+                <dialog class="dialogExample1">
+                    <div class="dialogTitle">Исходный граф и его остовное дерево</div>
+                    <div id="graphExm1"></div>
+                    <div id="graphExm2"></div>
+                    <button id="closeDialogExample">Закрыть</button>
+                </dialog>
                 </p>
             </div>
         </div>

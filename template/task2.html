@@ -21,8 +21,8 @@
         <div class="logo"></div>
         <nav class="top-menu">
             <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Профиль</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
                 <li>Теория графов</li>
             </ul>
         </nav>
@@ -31,19 +31,19 @@
     <div class="content">
         <div class="content-menu">
             <ul>
-                <li><a href="theory3.html"><i class="fa fa-angle-left"></i></a></li>
-                <li><a href="theory3.html"><i class="fa fa-align-justify"></i></a></li>
+                <li><a href="theory2.html"><i class="fa fa-angle-left"></i></a></li>
+                <li><a href="theory2.html"><i class="fa fa-align-justify"></i></a></li>
                 <li class="active"><a href="task2.html"><i class="fa fa-random"></i></a></li>
-                <li><a href="theory4.html"><i class="fa fa-angle-right"></i></a></li>
+                <li><a href="theory3.html"><i class="fa fa-angle-right"></i></a></li>
             </ul>
         </div>
         <div class="task">
             <div class="column-title">Раскраска вершин графа</div>
             <div class="column-text">
                 На рисунке представлен граф G(U,V), где U - множество ребёр, а V - множество вершин.
-                Необходимо, манипулируя матрицей, построить для данного графа минимальное остовное дерево.
+                Необходимо, изменяя цвета вершин графа в поле справа, раскрасить граф.
                 <br><br>
-                Не забывайте, что во взвешенных графах число между вершинам означает вес ребра.
+                После того, как введете нужные значения, нажмите кнопку "Сохранить". И только после этого "Проверить".
             </div>
         </div>
         <div class="example">
@@ -54,36 +54,42 @@
                     <option value="#D50000">Красная</option>
                     <option value="#1A237E">Синяя</option>
                     <option value="#EF6C00">Оранжевая</option>
+                    <option value="#9C27B0">Фиолетовая</option>
                 </select>
                 &nbsp;&nbsp;&nbsp;Вершина 2 -
                 <select id="select2">
                     <option value="#D50000">Красная</option>
                     <option value="#1A237E">Синяя</option>
                     <option value="#EF6C00">Оранжевая</option>
-                </select><br/><br/><br/>
+                    <option value="#9C27B0">Фиолетовая</option>
+                </select><br/><br/>
                 Вершина 3 -
                 <select id="select3">
                     <option value="#D50000">Красная</option>
                     <option value="#1A237E">Синяя</option>
                     <option value="#EF6C00">Оранжевая</option>
+                    <option value="#9C27B0">Фиолетовая</option>
                 </select>
                 &nbsp;&nbsp;&nbsp;Вершина 4 -
                 <select id="select4">
                     <option value="#D50000">Красная</option>
                     <option value="#1A237E">Синяя</option>
                     <option value="#EF6C00">Оранжевая</option>
-                </select><br/><br/><br/>
+                    <option value="#9C27B0">Фиолетовая</option>
+                </select><br/><br/>
                 Вершина 5 -
                 <select id="select5">
                     <option value="#D50000">Красная</option>
                     <option value="#1A237E">Синяя</option>
                     <option value="#EF6C00">Оранжевая</option>
+                    <option value="#9C27B0">Фиолетовая</option>
                 </select>
                 &nbsp;&nbsp;&nbsp;Вершина 6 -
                 <select id="select6">
                     <option value="#D50000">Красная</option>
                     <option value="#1A237E">Синяя</option>
                     <option value="#EF6C00">Оранжевая</option>
+                    <option value="#9C27B0">Фиолетовая</option>
                 </select>
                 <div class="buttons">
                     <button class="btn btn-save-task2" onclick="getGraph()">Сохранить</button>
@@ -91,16 +97,20 @@
             </div>
         </div>
         <div class="result">
-            <div class="column-title">Иходный граф и его раскраска</div>
+            <div class="column-title">Раскраска графа</div>
             <div class="column-text">
-                <div class="column-left">
-                    <div id="Graph1"></div>
-                </div>
-                <div class="column-right">
-                    <div id="Graph2"></div>
-                </div>
+                <div id="Graph-task2"></div>
             </div>
         </div>
+        <dialog class="dialogFalse">
+            <p>Задание выполнено неверно!</p>
+            <button id="closeDialogFalse">Закрыть</button>
+        </dialog>
+        <dialog class="dialogTrue">
+            <p>Задание выполнено верно!</p>
+            <button id="closeDialogTrue">Закрыть</button>
+        </dialog>
+        <!--<button id="show">Open Dialog!</button>-->
         <div class="buttons">
             <button class="btn btn-check" onclick="checkTask()"><i class="my-font fa fa-check"></i> Проверить</button>
         </div>

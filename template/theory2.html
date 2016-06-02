@@ -7,6 +7,14 @@
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/main.css">
+
+    <script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="../js/theory2.js"></script>
+
+    <!-- Sigma.js -->
+    <script src="../js/build/sigma.min.js"></script>
+    <script src="../js/build/plugins/sigma.parsers.json.min.js"></script>
+    <script src="../js/build/plugins/sigma.renderers.edgeLabels.min.js"></script>
 </head>
 <body>
 <div class="container clearfix">
@@ -14,8 +22,8 @@
         <div class="logo"></div>
         <nav class="top-menu">
             <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Профиль</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
                 <li>Теория графов</li>
             </ul>
         </nav>
@@ -24,17 +32,41 @@
     <div class="content">
         <div class="content-menu">
             <ul>
-                <li><a href="theory1.html"><i class="fa fa-angle-left"></i></a></li>
-                <li><a href="theory1.html"><i class="fa fa-align-justify"></i></a></li>
+                <li><a href="task1.html"><i class="fa fa-angle-left"></i></a></li>
                 <li class="active"><a href="theory2.html"><i class="fa fa-align-justify"></i></a></li>
-                <li><a href="task1.html"><i class="fa fa-random"></i></a></li>
-                <li><a href="task1.html"><i class="fa fa-angle-right"></i></a></li>
+                <li><a href="task2.html"><i class="fa fa-random"></i></a></li>
+                <li><a href="task2.html"><i class="fa fa-angle-right"></i></a></li>
             </ul>
         </div>
         <div class="content-theory">
-            <div class="theory-title">Пример построения остовных деревьев</div>
+            <div class="theory-title">Раскраска графов</div>
             <div class="theory-text">
+                <p><b>Алгоритм раскраски графа</b> позволяет находить (точное или приближенное) значение хроматического числа произвольного графа и соответствующую этому значению раскраску вершин.</p>
 
+                <p>Граф G называют r-хроматическим, если его вершины могут быть раскрашены с использованием r цветов (красок) так, что не найдется двух смежных вершин одного цвета.
+                Наименьшее число r, такое, что граф G является r-хроматическим, называется хроматическим числом графа G. Задача нахождения хроматического числа графа называется задачей о раскраске (или задачей раскраски) графа.</p>
+
+                <p>Рассмотрим последовательный метод, основанный на упорядочивании множества вершин:</p>
+
+                <p><b>Colourize(G)</b><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;1. Упорядочить вершины по невозрастанию степени.<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;2. Окрасить первую вершину в цвет 1.<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;3. Выбрать цвет окраски 1.<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;4. Пока не окрашены все вершины, повторять п.4.1.-4.2.:<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1. Окрасить в выбранный цвет всякую вершину, которая не смежна
+                с другой, уже окрашенной в этот цвет.<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2. Выбрать следущий цвет.</p>
+                <p>В этом простейшем из методов вершины вначале располагаются в порядке невозрастания их степеней.
+                Первая вершина окрашивается в цвет 1; затем список вершин просматривается сверху вниз (по невозрастанию степеней) и в цвет 1 окрашивается всякая вершина, которая не смежна с другой, уже окрашенной в этот цвет.
+                Потом возвращаемся к первой в списке неокрашенной вершине, окрашиваем ее в цвет 2 и снова просматриваем список вершин сверху вниз, окрашивая в цвет 2 любую неокрашенную вершину, которая не соединена ребром с другой, уже окрашенной в цвет 2 вершиной.
+                Аналогично действуем с цветами 3, 4 и т. д., пока не будут окрашены все вершины. Число использованных цветов будет тогда приближенным значением хроматического числа графа.</p>
+                <button class="Example" onclick="getExample()">Пример раскраски графов</button>
+                <dialog class="dialogExample2">
+                    <div class="dialogTitle">Исходный граф и его раскраска</div>
+                    <div id="graphExm1"></div>
+                    <div id="graphExm2"></div>
+                    <button id="closeDialogExample">Закрыть</button>
+                </dialog>
             </div>
         </div>
     </div>

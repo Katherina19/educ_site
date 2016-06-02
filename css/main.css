@@ -55,7 +55,7 @@ body {
     margin-right: 5px;
     margin-left: 10px;
     border-radius: 5px;
-    background-color: #5e9400;
+    background-color: #a8ba86;
 }
 
 .top-menu li:nth-child(3){
@@ -269,7 +269,7 @@ body {
     margin-top: 20px;
     float: right;
     width: 500px;
-    height: 350px;
+    height: 500px;
     border-radius: 10px;
     box-shadow: 0 0 15px 2px #dbdbdb;
 }
@@ -287,13 +287,15 @@ body {
     margin-top: 20px;
     float: left;
     width: 500px;
-    height: 570px;
+    height: 630px;
     border-radius: 10px;
     box-shadow: 0 0 15px 2px #dbdbdb;
 }
 
 .content .task-code #editor {
-    height: 570px;
+    height: 630px;
+    text-transform: none;
+    font-size: 14px;
 }
 
 .content .task-result {
@@ -301,7 +303,7 @@ body {
     margin-top: 20px;
     float: left;
     width: 500px;
-    height: 200px;
+    height: 110px;
     border-radius: 10px;
     box-shadow: 0 0 15px 2px #dbdbdb;
 }
@@ -329,7 +331,7 @@ body {
 
 .content .btn-task2-check {
     width: 130px;
-    margin-left: 300px;
+    margin-left: 250px;
 }
 
 .main-footer {
@@ -360,7 +362,18 @@ body {
 .content .buttons .btn-save {
     height: 40px;
     width: 130px;
-    margin-left: 150px;
+    margin-left: 50px;
+    margin-top: 15px;
+    background-color: #a8ba86;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.content .buttons .btn-reload {
+    height: 40px;
+    width: 130px;
+    margin-left: 50px;
     margin-top: 15px;
     background-color: #a8ba86;
     border: none;
@@ -379,3 +392,157 @@ body {
     text-transform: uppercase;
 }
 
+#Graph-task2 {
+    padding-left: 200px;
+    /*padding-right: 400px;*/
+    height: 230px;
+    width: 300px;
+}
+
+#result {
+    padding-left: 30px;
+    padding-top: 10px;
+    text-transform: none;
+}
+
+dialog {
+    text-transform: none;
+    margin-top: 230px;
+    text-align: center;
+    font-size: 18px;
+    width: 300px;
+    height: 110px;
+    box-shadow: 0 0 15px 2px #dbdbdb;
+}
+
+.dialogFalse {
+     color: crimson;
+     border: 1px solid crimson;
+ }
+
+#closeDialogFalse {
+    height: 40px;
+    width: 130px;
+    background-color: crimson;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.dialogError {
+    color: crimson;
+    border: 1px solid crimson;
+    height: 150px;
+}
+
+#closeDialogError {
+    height: 40px;
+    width: 130px;
+    background-color: crimson;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.dialogErrorEdg {
+    color: crimson;
+    border: 1px solid crimson;
+    height: 150px;
+}
+
+#closeDialogErrorEdg {
+    height: 40px;
+    width: 130px;
+    background-color: crimson;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.dialogErrorInput {
+    color: crimson;
+    border: 1px solid crimson;
+    height: 150px;
+}
+
+#closeDialogErrorInput {
+    height: 40px;
+    width: 130px;
+    background-color: crimson;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.dialogTrue {
+     color: #5e9400;
+     border: 1px solid #5e9400;
+ }
+
+#closeDialogTrue {
+    height: 40px;
+    width: 130px;
+    background-color: #a8ba86;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.Example {
+    height: 40px;
+    width: 230px;
+    margin-left: 405px;
+    /*margin-top: 15px;*/
+    background-color: #a8ba86;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.dialogExample2 {
+    text-transform: none;
+    margin-top: -500px;
+    text-align: center;
+    font-size: 18px;
+    width: 550px;
+    height: 260px;
+    box-shadow: 0 0 15px 2px #dbdbdb;
+    color: #5e9400;
+    border: 1px solid #5e9400;
+}
+
+.dialogExample1 {
+    text-transform: none;
+    margin-top: -450px;
+    text-align: center;
+    font-size: 18px;
+    width: 550px;
+    height: 260px;
+    box-shadow: 0 0 15px 2px #dbdbdb;
+    color: #5e9400;
+    border: 1px solid #5e9400;
+}
+
+#closeDialogExample {
+    height: 40px;
+    width: 130px;
+    margin-left: 10px;
+    background-color: #a8ba86;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+#graphExm1 {
+    float: left;
+    margin-left: -50px;
+    height: 200px;
+    width: 200px;
+}
+
+#graphExm2 {
+    float: left;
+    margin-left: 50px;
+    height: 200px;
+    width: 200px;
+}

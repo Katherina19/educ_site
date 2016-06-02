@@ -14,8 +14,8 @@
         <div class="logo"></div>
         <nav class="top-menu">
             <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Профиль</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
                 <li>Теория графов</li>
             </ul>
         </nav>
@@ -24,16 +24,38 @@
     <div class="content">
         <div class="content-menu">
             <ul>
-                <li><a href="task1.html"><i class="fa fa-angle-left"></i></a></li>
+                <li><a href="task2.html"><i class="fa fa-angle-left"></i></a></li>
                 <li class="active"><a href="theory3.html"><i class="fa fa-align-justify"></i></a></li>
-                <li><a href="task2.html"><i class="fa fa-random"></i></a></li>
-                <li><a href="task2.html"><i class="fa fa-angle-right"></i></a></li>
+                <li><a href="task3.html"><i class="fa fa-code"></i></a></li>
+                <li><a href="task3.html"><i class="fa fa-angle-right"></i></a></li>
             </ul>
         </div>
         <div class="content-theory">
-            <div class="theory-title">Минимальное остовное дерево в графе</div>
+            <div class="theory-title">Алгоритм поиска остовного дерева</div>
             <div class="theory-text">
-
+                <p>В конце 1950-х годов Эдгар Дейкстра и Прим, работая и публикуя свои результаты независимо друг от друга,
+                предложили следующий алгоритм построения МОД.
+                Воспользуемся для поиска МОД так называемым "жадным" алгоритмом.
+                Жадные алгоритмы действуют, используя в каждый момент лишь часть исходных данных и принимая лучшее решение на основе этой части.
+                В нашем случае мы будем на каждом шаге рассматривать множество ребер, допускающих присоединение к уже построенной части остовного дерева,
+                и выбирать из них ребро с наименьшим весом. Повторяя эту процедуру, мы получим остовное дерево с наименьшим весом.
+                Разобьем вершины графа на три класса: вершины, вошедшие в уже построенную часть дерева, вершины, окаймляющие построенную часть,
+                и еще не рассмотренные вершины. Начнем с произвольной вершины графа и включим ее в остовное дерево. Поскольку результатом построения
+                будет некорневое дерево, выбор исходной вершины не влияет на окончательный результат (конечно, если МОД единственно).
+                Все вершины, соединенные с данной, заносим в кайму. Затем выполняется цикл поиска ребра с наименьшим весом, соединяющего
+                уже построенную часть остовного дерева с каймой; это ребро вместе с новой вершиной добавляется в дерево и происходит обновление каймы.
+                После того, как в дерево попадут все вершины, работа будет закончена.</p>
+                <p>Вот как выглядит алгоритм:<br/><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;выбрать начальный узел<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;сформировать начальную кайму, состоящую из вершин, соседних с начальным узлом<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>while</b> в графе есть вершины, не попавшие в дерево <b>do</b><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;выбрать ребро из дерева в кайму с наименьшим весом<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;добавить конец ребра к дереву<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;изменить кайму, для чего<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;добавить в кайму вершины, соседние с новой<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;обновить список ребер из дерева в кайму так,<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;чтобы он состоял из ребер наименьшего веса<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>end while</b></p>
             </div>
         </div>
     </div>

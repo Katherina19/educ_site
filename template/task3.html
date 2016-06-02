@@ -7,6 +7,8 @@
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/main.css">
+
+    <script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
 </head>
 <body>
 <div class="container clearfix">
@@ -14,8 +16,8 @@
         <div class="logo"></div>
         <nav class="top-menu">
             <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Профиль</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
                 <li>Теория графов</li>
             </ul>
         </nav>
@@ -24,25 +26,43 @@
     <div class="content">
         <div class="content-menu">
             <ul>
-                <li><a href="theory4.html"><i class="fa fa-angle-left"></i></a></li>
-                <li><a href="theory4.html"><i class="fa fa-align-justify"></i></a></li>
+                <li><a href="theory3.html"><i class="fa fa-angle-left"></i></a></li>
+                <li><a href="theory3.html"><i class="fa fa-align-justify"></i></a></li>
                 <li class="active"><a href="task3.html"><i class="fa fa-code"></i></a></li>
                 <li><a href=""><i class="fa fa-angle-right"></i></a></li>
             </ul>
         </div>
         <div class="content-tasks">
             <div class="column-title">Остовное дерево</div>
-            <div class="column-text">Дано некоторое дерево. Необходимо выяснить, является ли оно остовным для некоторого графа G(U,V).
-                На вход подается матрица дерева и матрица исходного графа. Если является, то вывести 1, иначе - 0.</div>
+            <div class="column-text">Дано некоторое дерево. Необходимо написать функцию checkGraph, которая будет возвращать 1, если дерево является остовным
+                для данного графа, и 0 - если не является.
+                На вход подается матрица остовного дерева.<br/><br/>
+                Матрица исходного графа:<br/>
+                var graphArray = [[0,1,1,0,1],
+                [1,0,1,1,0],
+                [1,1,0,1,0],
+                [0,1,1,0,1],
+                [1,0,0,1,0]];
+                <br/><br/>
+                Пример матрицы остовного дерева, поданной на вход:<br/>
+                var graphOstArray = [[0,1,1,0,0],
+                [1,0,0,1,0],
+                [1,0,0,0,0],
+                [0,1,0,0,1],
+                [0,0,0,1,0]];<br/><br/>
+                Пример того, как должна выглядеть функция:<br/>
+                function checkGraph(graphOstArray){<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;//code<br/>
+                }
+            </div>
         </div>
         <div class="task-code">
-            <div id="editor" ></div>
+            <div id="editor"></div>
         </div>
         <div class="task-result">
             <div class="column-title">Результат работы программы</div>
+            <div id="result"></div>
         </div>
-        <button class="task-btn btn-start"><i class="my-font fa fa-repeat"></i> Запустить</button>
-        <button class="task-btn btn-remove"><i class="my-font fa fa-times"></i> Очистить</button>
         <button class="task-btn btn-task2-check"><i class="my-font fa fa-check"></i> Проверить</button>
     </div>
 

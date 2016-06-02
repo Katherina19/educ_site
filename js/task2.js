@@ -1,7 +1,7 @@
 /**
  * Created by Katherine on 06.05.2016.
  */
-// »ÒıÓ‰Ì˚È „‡Ù
+// –ò—Å—Ö–æ–¥–Ω—ã–π –≥—Ä–∞—Ñ
 var graphArray = [
     [0,0,0,0,0,0,0],
     [0,0,1,1,0,0,0],
@@ -57,23 +57,6 @@ setNode = function(s, n, x, y, size, color) {
 $(document).ready(function() {
     var n = graphArray.length;
 
-    setNode(s1, 1, 0, 0, 3, "#757575");
-    setNode(s1, 2, 3, 0, 3, "#757575");
-    setNode(s1, 3, 0, 2, 3, "#757575");
-    setNode(s1, 4, 4, 2, 3, "#757575");
-    setNode(s1, 5, 4, 4, 3, "#757575");
-    setNode(s1, 6, 1, 4, 3, "#757575");
-
-    sig1 = new sigma({
-        graph: s1,
-        container: 'Graph1',
-        settings: {
-            defaultNodeColor: "#757575"
-        }
-    });
-
-    setEdge(n, sig1);
-
     setNode(s2, 1, 0, 0, 3, "#757575");
     setNode(s2, 2, 3, 0, 3, "#757575");
     setNode(s2, 3, 0, 2, 3, "#757575");
@@ -83,11 +66,13 @@ $(document).ready(function() {
 
     sig2 = new sigma({
         graph: s2,
-        container: 'Graph2',
+        container: 'Graph-task2',
         settings: {
             defaultNodeColor: "#757575"
         }
     });
+
+    sig2.settings('mouseEnabled', 0);
 
     setEdge(n, sig2);
 
@@ -121,9 +106,19 @@ $(document).ready(function() {
         }
 
         if(edg == trueColor){
-            console.log('YES');
+            var dialog = document.querySelector('.dialogTrue');
+            dialog.show();
+
+            document.querySelector('#closeDialogTrue').onclick = function() {
+                dialog.close();
+            };
         } else {
-            console.log('NO');
+            var dialog = document.querySelector('.dialogFalse');
+            dialog.show();
+
+            document.querySelector('#closeDialogFalse').onclick = function() {
+                dialog.close();
+            };
         }
-    }
+    };
 });
